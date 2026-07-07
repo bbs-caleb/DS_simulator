@@ -5,7 +5,7 @@
 | Задача | Категория | Метрика | Ответ | Статус |
 |---|---|---|---|---|
 | 1. Реклама приставок | `console_sales` | Cumulative Absolute Effect | **-350** | 100/100 |
-| 2. Кешбэк SigmaBank | `power_tools_sales` | Relative Average Effect | **-0.03** | сдано (≥80) |
+| 2. Кешбэк SigmaBank | `power_tools_sales` | Relative Average Effect | **-0.03** | 100/100 |
 
 ## Главные уроки, которые стоят обеих задач
 
