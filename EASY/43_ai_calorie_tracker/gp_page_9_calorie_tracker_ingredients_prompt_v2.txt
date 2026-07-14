@@ -1,0 +1,20 @@
+Look at the image.
+
+If ANY food or drink is visible, return a non-empty valid JSON object that maps visible ingredient names to estimated weights in grams.
+
+Rules for food images:
+- Return at least one ingredient.
+- Use short lowercase English ingredient names as keys.
+- Use positive integer gram values.
+- Never return {} when food or drink is visible.
+- If you are unsure about the exact ingredient, use a generic key such as "food", "meat", "cheese", "sauce", or "vegetables".
+- If you are unsure about the weight, make a reasonable estimate.
+
+Examples:
+Pizza -> {"dough": 180, "tomato sauce": 60, "cheese": 100, "pepperoni": 50}
+Burger -> {"bun": 80, "beef patty": 150, "cheese": 25, "lettuce": 15, "tomato": 30, "sauce": 20}
+Unknown visible dish -> {"food": 300}
+
+Return {} only when there is definitely no food or drink anywhere in the image.
+
+Return JSON only. No explanations. No markdown. No code fences.

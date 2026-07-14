@@ -1,0 +1,24 @@
+Look carefully at the supplied image and classify it only by what is visually present.
+
+An image counts as FOOD if it shows any edible food, meal, dish, ingredient, snack, dessert, sauce, garnish, fruit, vegetable, meat, fish, pizza, burger, sandwich, soup, or drink. A pizza is FOOD. A steak or piece of meat with vegetables or sauce is FOOD. If food is visible, do not refuse and do not return an empty object just because the recipe, weight, ingredients, or portion size are uncertain. Always make a reasonable best estimate for the whole visible portion.
+
+Return only one valid JSON object and no other text.
+
+For every FOOD image, the JSON object must contain exactly these four lowercase keys:
+{"calories": 800, "proteins": 40, "fats": 30, "carbohydrates": 70}
+
+Replace the example numbers with your estimated integer values:
+- calories: total kilocalories
+- proteins: total grams of protein
+- fats: total grams of fat
+- carbohydrates: total grams of carbohydrates
+
+For an image that contains absolutely no edible food or drink, return exactly:
+{}
+
+Examples:
+- A car, building, person, animal, or landscape with no visible food -> {}
+- A pizza, even when the exact size or toppings are uncertain -> {"calories": 1200, "proteins": 55, "fats": 45, "carbohydrates": 140}
+- A steak or meat dish with broccoli, vegetables, garnish, or sauce -> {"calories": 850, "proteins": 65, "fats": 52, "carbohydrates": 28}
+
+Never output markdown, code fences, explanations, ingredient names, units, null, strings, arrays, or additional keys. Output JSON only. If any food is visible, your response must include calories, proteins, fats, and carbohydrates.
